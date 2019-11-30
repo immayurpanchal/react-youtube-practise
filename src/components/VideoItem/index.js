@@ -2,9 +2,7 @@ import React from 'react';
 
 const VideoItem = (props) => {
 	const onVideoItemClicked = () => {
-		console.log('video clicked');
-
-		// props.onSelectVideo(props.videoId);
+		props.onSelectVideo(props.videoId);
 	};
 	return (
 		<div className='card ml-2 mr-2 mt-2' style={{ width: '18rem' }} onClick={onVideoItemClicked}>
